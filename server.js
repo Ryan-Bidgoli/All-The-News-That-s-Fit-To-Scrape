@@ -45,4 +45,6 @@ db.scrapedData.drop()
         var summary = $(element)
           .find("p").text();
       }
+     if (title && link && image && summary) {
+      }                   
 }
