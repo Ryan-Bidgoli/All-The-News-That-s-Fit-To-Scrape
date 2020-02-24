@@ -27,4 +27,13 @@ db.scrapedData.drop()
     .get("https://kotaku.com/")
     .then(function (response) {
       var $ = cheerio.load(response.data);
+      
+      var results = [];
+      
+      $("article").each(function (i, element) {
+        var title = $(element)
+          .find("h1")
+          .children("a")
+          .text();
+      }
 }
