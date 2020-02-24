@@ -65,3 +65,13 @@ db.scrapedData.drop()
       console.log(results);
     })
 });
+
+app.get("/all", function (req, res) {
+  db.scrapedData.find({}, function (err, found) {
+    if (err) {
+      console.log(err)
+    } else {
+      res.json(found)
+    }
+  });
+});
