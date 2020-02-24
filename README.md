@@ -31,4 +31,7 @@
 ### Overview
  
 
+Uses Cheerio to scrape news articles from a site and allows the user to add notes and delete them. Use Mongoose to store the  notes and articles.
+
+
  
