@@ -1,1 +1,4 @@
-//
+
+$.getJSON("/all", function(data){
+  
+});
