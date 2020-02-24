@@ -11,3 +11,11 @@ app.use(express.static("public"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+var db = mongojs(process.env.MONGODB_URI || 'scraper', collections);
+db.on("error", function (error) {
+  console.log("Database Error:", error);
+});
+
+app.get("/", function(req, res) {
+  res.render("index");
+})
