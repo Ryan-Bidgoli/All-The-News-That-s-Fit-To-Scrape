@@ -19,3 +19,8 @@ db.on("error", function (error) {
 app.get("/", function(req, res) {
   res.render("index");
 })
+
+app.get("/scrape", function (req, res) {
+db.scrapedData.drop()
+  
+}
