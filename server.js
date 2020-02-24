@@ -35,5 +35,14 @@ db.scrapedData.drop()
           .find("h1")
           .children("a")
           .text();
+           var link = $(element)
+          .find("h1")
+          .children("a")
+          .attr("href");
+        var image = $(element)
+          .find("source")
+          .attr("data-srcset");
+        var summary = $(element)
+          .find("p").text();
       }
 }
