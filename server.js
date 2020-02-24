@@ -90,4 +90,7 @@ app.get("/title", function(req, res) {
   });
 });
 
+app.listen(PORT, function () {
+  console.log("App running on port 3000!");
+});
 
