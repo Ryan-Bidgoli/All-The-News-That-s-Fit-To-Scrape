@@ -75,3 +75,19 @@ app.get("/all", function (req, res) {
     }
   });
 });
+
+app.get("/title", function(req, res) {
+ 
+  db.scrapedData.find().sort({ title: 1 }, function(error, found) {
+    // Log any errors if the server encounters one
+    if (error) {
+      console.log(error);
+    }
+    // Otherwise, send the result of this query to the browser
+    else {
+      res.send(found);
+    }
+  });
+});
+
+
