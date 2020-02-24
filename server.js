@@ -23,4 +23,8 @@ app.get("/", function(req, res) {
 app.get("/scrape", function (req, res) {
 db.scrapedData.drop()
   
+    axios
+    .get("https://kotaku.com/")
+    .then(function (response) {
+      var $ = cheerio.load(response.data);
 }
