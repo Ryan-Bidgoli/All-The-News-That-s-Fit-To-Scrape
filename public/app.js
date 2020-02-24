@@ -13,3 +13,10 @@ function setActive(selector) {
   $("th").removeClass("active");
   $(selector).addClass("active");
 }
+
+$("#headline-sort").on("click", function(){
+  $("#tbody").empty();
+  setActive("#title");
+
+ 
+});
