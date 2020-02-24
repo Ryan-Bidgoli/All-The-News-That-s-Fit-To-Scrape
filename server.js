@@ -46,5 +46,12 @@ db.scrapedData.drop()
           .find("p").text();
       }
      if (title && link && image && summary) {
-      }                   
+         db.scrapedData.insert({
+          title: title,
+          link: link,
+          image: image,
+          summary: summary
+        }, 
+      })                         
+     }                   
 }
