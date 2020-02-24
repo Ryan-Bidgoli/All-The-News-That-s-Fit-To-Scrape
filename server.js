@@ -52,6 +52,14 @@ db.scrapedData.drop()
           image: image,
           summary: summary
         }, 
+       function(err, inserted) {
+          if (err) {
+            console.log(err);
+          }
+          else {
+            console.log("scrapedData")
+            console.log(inserted);
+          }                         
       })                         
      }                   
 }
