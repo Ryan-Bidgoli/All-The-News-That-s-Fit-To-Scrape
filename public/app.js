@@ -10,5 +10,6 @@ $.getJSON("/all", function(data){
 
 
 function setActive(selector) {
-  
+  $("th").removeClass("active");
+  $(selector).addClass("active");
 }
