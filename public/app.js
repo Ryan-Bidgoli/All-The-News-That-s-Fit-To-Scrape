@@ -7,3 +7,8 @@ $.getJSON("/all", function(data){
                             "<td><img src='" + data[i].image +  " '/></td>" + 
    }
 });
+
+
+function setActive(selector) {
+  
+}
