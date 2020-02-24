@@ -61,5 +61,7 @@ db.scrapedData.drop()
             console.log(inserted);
           }                         
       })                         
-     }                   
-}
+    });
+      console.log(results);
+    })
+});
